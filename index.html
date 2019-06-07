@@ -2,9 +2,33 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8" />
-	<title>ポートフォリオじゃい！！</title>
+	<meta name="viewport" content="width=devicewidth,initial-scale=1.0" />
+	<title>calender生成</title>
+	<link rel="stylesheet" href="calender.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
 </head>
 <body>
-	<h1>あああああああああああああああああああああああああああああああああああああああああああああああああ</h1>
+
+	<!-- <button id = "open"><i class="fab fa-openid"></i></button>
+	<button id = "close"><i class="fas fa-window-close"></i></button> -->
+<div id="block">
+	<nav>
+		<button id="prev"><i class="fas fa-caret-left"></i></button>
+		<div>
+		<i class="far fa-calendar-check"></i>	
+		<span id="date" data-y="" data-m="" >2019年1月</span>
+		</div>
+		<button id="next"><i class="fas fa-caret-right"></i></button>
+	</nav>
+</div>
+
+<div class="calender"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="calender.js"></script>
+<script src="control.js"></script>
+<script src="muda.js"></script>
+
+
 </body>
 </html>

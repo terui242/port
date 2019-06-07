@@ -1,0 +1,79 @@
+	.calender{
+		display:flex;
+		flex-wrap:wrap;
+		width:290px;
+		/*margin: 0 auto;*/
+		/*30px×７日分*/
+	}
+	.calender div{
+		border:1px solid #333;
+		width:28px;
+		height:28px;
+		/*縦30px横30px*/
+	}
+	nav{
+		display: flex;
+		width: 290px;
+	}
+	nav div{
+		width: calc(100% - 80px);
+		text-align: center;
+	}
+	.youbi{
+		line-height: 28px;
+		color : #000;
+		background-color: #9f9;
+		text-align: center;
+	}
+	/*.youbi:nth-of-type(1){
+		color: #f00;
+	}
+	.youbi:nth-of-type(7){
+		color:#00f;
+	}*/
+
+	.none,.youbi{
+		display: none;
+	}
+
+	.calender .yotei{
+		width:258px;
+	}
+	button{
+	 /*margin: 0 auto;*/
+	 width:40px;
+	}
+	.none{
+		background-color: #ccc;
+	}
+	.sat{
+		color:#fff;
+		background-color: #69c;
+	}
+	.sat2{
+		background-color: #9cf;
+	}
+	.sun,.holiday{
+		color:#fff;
+		background-color: #e33;
+	}
+	.sun2{
+		background-color: #fcc;
+	}
+
+
+	@media screen and (min-width: 640px){
+		.calender,nav{
+			width:210px;
+		}
+		.none,.youbi{
+			display: block;
+		}
+		.yotei{
+			display: none;
+		}
+
+		/*button{
+			margin: 0 auto;
+		}*/
+	}
